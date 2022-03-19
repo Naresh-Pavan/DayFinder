@@ -4,9 +4,9 @@ function dayofweek(d,m,y)
     y -= (m < 3) ? 1 : 0;
     return ( y + y/4 - y/100 + y/400 + t[m-1] + d) % 7;
 }
-let d=parseInt(prompt("Enter your birth day"));
-let m=parseInt(prompt("enter your birth month"));
-let y=parseInt(prompt("enter your birth year"));
+let d=parseInt(prompt("Enter day"));
+let m=parseInt(prompt("enter month"));
+let y=parseInt(prompt("enter year"));
 let day = Math.round(dayofweek(d,m,y));
 let nameOfDay;
 switch(day){
